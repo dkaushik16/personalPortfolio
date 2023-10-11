@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+
+ul li{
+  list-style:none;  
+}
+a{
+    text-decoration:none;
+}
+
+:root{
+    --pr-col:#fff;
+    --pr-shade:#f7f5f2;
+    --sec-col:#000;
+    --red-col:#d40700;
+    --red-shade:#b20600;
+    --accent-color:#ffee63;
+}
+
+body{
+    background: rgb(2,0,36);
+    background:linear-gradient(90deg,rgba(2,0,36,1) 0%,rgba(50,50,51,1)
+     35% rgba(0,212,255,1) 100%);
+     background:linear-gradient(to right,#040404,#242424,#656565);
+    color:var(--pr-col);
+    }
+
+  .content{
+    height:90vh;
+  }  
+ .new{
+    text-shadow: 2px 1px 1px rgb(28, 53, 154);
+ }
+  
+  span{
+    color:var(--red-col);
+    text-shadow:1px 1px 1px rgb(167, 109, 109);
+ 
+    
+  }
+
+  ul li a{
+    margin:0 10px;
+    padding:0 5px;
+    color:var(--accent-color);
+    font-size:18px;
+    position:relative;
+    
+}
+ul li a::before{
+    content:'';
+    width:0px;
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    height:2px;
+    background:var(--pr-col);
+    transition:0.6s ease;
+}
+
+ul li a:hover::before{
+    width:100%;
+}
+.btn{
+    width:150px;
+    height:40px;
+    border-radius:8px;
+    padding:0 5px;
+    outline:none;
+    border:none;
+    background:var(--red-col);
+    color:var(--pr-col);
+    cursor:pointer;
+    font-weight:700;
+    font-size:16px;
+    box-shadow: 10px 10px 50px  #900000 ;
+}
+ .btn:hover{
+    background:var(--red-shade);
+    color:var(--pr-shade);
+    border:2px solid var(--red-col);
+ }
+ .btn2{
+    width:180px;
+}
+.flex2{
+    flex: 2;
+}
+.flex3{
+    flex: 3;
+}
+.right img{
+    width:400px;
+    height:400px;
+    
+    
+    
+}
+.ham{
+    position:absolute;
+    top:30px;
+    right:10px;
+    cursor:pointer;
+}
+.circle{
+    border: solid #900000   5px;
+    width:350px;
+    height:400px;
+    border-radius: 60%;
+    position:absolute;
+    bottom:50px;
+    right:
+    background:;
+    z-index: -1;
+    box-shadow: 20px 20px 50px #900000  ;
+}
+.box{
+    width:410px;
+    height:500px;
+    border-radius: 60%;
+    
+    
+}
+
+
+
+@media (max-width:640px){
+    .content2{
+        flex-direction:column;
+    }
+ 
+   .circle{
+    top:330px;
+   }
+    
+ #nav{
+  order:3;
+   
+   
+    
+ }
+ .contact{
+    margin-left: 40px;
+ }
+
+ .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    top:40px;
+    background:var(--sec-col);
+
+ }
+ 
+ 
+
+ 
+ .ham img{
+    width:40px;
+ }
+
+ 
+ 
+   
+}
+ 
